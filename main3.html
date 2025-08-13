@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Teja Y's personal portfolio showcasing skills, projects, and resume." />
+  <meta name="keywords" content="Teja Y, portfolio, web developer, projects, resume, frontend, backend" />
+  <meta name="author" content="Teja Y" />
+  <title>Teja Y | Portfolio</title>
+  <link rel="stylesheet" href="style3.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="light-mode">
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="theme-toggle" onclick="toggleTheme()">🌓</div>
+  </header>
+
+  <div class="hero">
+    <h1>I AM TEJA Y</h1>
+    <h3>WELCOME TO MY PORTFOLIO</h3>
+    <p><span id="typed"></span></p>
+  </div>
+
+  <section id="about" data-aos="fade-up">
+    <h2>About</h2>
+    <p>Hello! I'm Teja Y, passionate about tech, web development, and design.</p>
+  </section>
+
+  <section id="projects" data-aos="fade-right">
+    <h2>Projects</h2>
+    <div class="project" onclick="openModal('Project 1 Details')">Project 1</div>
+    <div class="project" onclick="openModal('Project 2 Details')">Project 2</div>
+    <div class="project" onclick="openModal('Project 3 Details')">Project 3</div>
+  </section>
+
+  <section id="certificates" data-aos="fade-left">
+    <h2>Certificates</h2>
+    <div class="cert">NPTEL</div>
+    <div class="cert">Altium</div>
+    <div class="cert">Pantech</div>
+    <div class="cert">Certi 1</div>
+    <div class="cert">Certi 2</div>
+  </section>
+
+  <section id="skills" data-aos="zoom-in">
+    <h2>Skills</h2>
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">React</div>
+    <div class="skill">Java</div>
+    <div class="skill">Python</div>
+  </section>
+
+  <section id="resume" data-aos="fade-up">
+    <h2>Resume</h2>
+    <a href="TejaY_Resume.pdf" class="resume-btn" download>📄 Download PDF</a>
+  </section>
+
+  <section id="contact" data-aos="flip-up">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/mayvzyoo" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required><br>
+      <input type="email" name="email" placeholder="Your Email" required><br>
+      <textarea name="message" placeholder="Your Message" required></textarea><br>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <div class="modal-close" onclick="closeModal()">&times;</div>
+      <p id="modal-text"></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      &copy; Teja Y 2025. All rights reserved.
+      <a href="https://ruthikasri.github.io/RuthikaSri_Portfolio/" target="_blank" style="text-decoration: none;">❤</a>
+    </p>
+  </footer>
+  
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="script3.js"></script>
+</body>
+</html>
